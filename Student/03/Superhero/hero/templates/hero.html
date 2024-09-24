@@ -1,6 +1,14 @@
-<h1>{{ title }}</h1>
-<p>{{ body }}</p>
-<img src="{{ image }}" alt="{{ image }}" width="300">
-<p>
-    <a href=".">Show all heroes</a>
-</p>
+{% extends 'superhero_theme.html' %}
+<link rel="stylesheet" href="custom.css">
+{% block content %}
+<div class="container mt-5">
+  <h1 class="display-4 text-center">My Favorite Superheroes</h1>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href="hulk">Hulk</a></li>
+    <li class="list-group-item"><a href="ironman">Iron Man</a></li>
+    <li class="list-group-item"><a href="blackwidow">Black Widow</a></li>
+    <li class="list-group-item"><a href="blackpanther">Black Panther</a></li>
+    <li class="list-group-item"><a href="antman">Ant Man</a></li>
+  </ul>
+</div>
+{% endblock %}
